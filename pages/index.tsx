@@ -7,6 +7,7 @@ import useAxios from "axios-hooks";
 
 import { FaGithub, FaFileUpload } from "react-icons/fa";
 import {SiBuymeacoffee} from "react-icons/si"
+import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 const fileTypes = ["rosz"];
@@ -66,12 +67,12 @@ function Footer() {
       <nav>
         <ul>
           <li>
-            <a target="_blank" href="https://github.com/sashman/bs2tts/issues/new">
+            <a rel="norefferrer" href="https://github.com/sashman/bs2tts/issues/new">
               <FaGithub/> Report Issues
             </a>
           </li>
           <li>
-            <a target="_blank" href="https://www.buymeacoffee.com/sashman">
+            <a rel="norefferrer" href="https://www.buymeacoffee.com/sashman">
               <SiBuymeacoffee/> Support by donating
             </a>
           </li>
@@ -92,7 +93,10 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className={styles.description}>
-          <img src="bs2tts.png" alt="Battlescribe to Tabletop Simulator logo" />
+          <Image src="bs2tts.png" alt="Battlescribe to Tabletop Simulator logo" 
+              width={415}
+              height={258}
+              />
           <h1>BS2TTS</h1>
           <p> Battlescribe to Tabletop Simulator</p>
         </div>
