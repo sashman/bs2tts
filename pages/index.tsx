@@ -66,7 +66,7 @@ function Footer() {
       <nav>
         <ul>
           <li>
-            <a href="#">
+            <a target="_blank" href="https://github.com/sashman/bs2tts/issues/new">
               <FaGithub/> Report Issues
             </a>
           </li>
