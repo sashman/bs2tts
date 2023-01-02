@@ -70,6 +70,7 @@ function Footer() {
             <a
               rel="norefferrer"
               href="https://github.com/sashman/bs2tts/issues/new"
+
             >
               <FaGithub /> Report Issues
             </a>
@@ -121,21 +122,21 @@ export default function Home() {
             create a roster with <a rel="noreferrer" href="https://battlescribe.net/?tab=news">Battlescribe</a> and save the roster file (the
             file created should have the .rosz extension). Click the upload area
             or drag a file to upload the .rosz roster. When the roster is
-            uploaded, you'll be provided a code - copy this to your clipboard.
+            uploaded, you&apos;ll be provided a code - copy this to your clipboard.
           </p>
           <p>
             In Tabletop Simulator, paste the code into the Battlescribe2TTS tool
-            and then click "Submit Code". A series of buttons will be created
+            and then click &quot;Submit Code&quot;. A series of buttons will be created
             corresponding to the various selections in your army. To tell the
             tool which in-game model to use for a particular selection, first
             click the button, then pick up the model you want to use. The button
             should change colors to indicate the model has been saved. Once all
-            models have been selected, click the "Create Army" button. The
+            models have been selected, click the &quot;Create Army&quot; button. The
             models for your army will be spawned into the game, organized by
             unit, with their names and descriptions filled in from your
             Battlescribe data.
           </p>
-          <p>You're ready to play!</p>
+          <p>You&apos;re ready to play!</p>
         </div>
       </main>
       <Footer />
