@@ -27,6 +27,7 @@ jobs:
         run: |
           npm i
           npm run build
+          npm run add-domain
           npm run export
 
       - name: Deploy

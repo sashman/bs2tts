@@ -7,7 +7,8 @@
     "build": "next build",
     "export": "next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "add-domain": "echo \"www.bs2tts.com\" > build/CNAME"
   },
   "dependencies": {
     "@next/font": "13.1.1",
