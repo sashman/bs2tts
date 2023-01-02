@@ -6,7 +6,7 @@ import { FileUploader } from "react-drag-drop-files";
 import useAxios from "axios-hooks";
 
 import { FaGithub, FaFileUpload } from "react-icons/fa";
-import {SiBuymeacoffee} from "react-icons/si"
+import { SiBuymeacoffee } from "react-icons/si";
 import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -67,13 +67,16 @@ function Footer() {
       <nav>
         <ul>
           <li>
-            <a rel="norefferrer" href="https://github.com/sashman/bs2tts/issues/new">
-              <FaGithub/> Report Issues
+            <a
+              rel="norefferrer"
+              href="https://github.com/sashman/bs2tts/issues/new"
+            >
+              <FaGithub /> Report Issues
             </a>
           </li>
           <li>
             <a rel="norefferrer" href="https://www.buymeacoffee.com/sashman">
-              <SiBuymeacoffee/> Support by donating
+              <SiBuymeacoffee /> Support by donating
             </a>
           </li>
         </ul>
@@ -93,16 +96,46 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className={styles.description}>
-          <Image src="bs2tts.png" alt="Battlescribe to Tabletop Simulator logo" 
-              width={415}
-              height={258}
-              />
+          <Image
+            src="bs2tts.png"
+            alt="Battlescribe to Tabletop Simulator logo"
+            width={415}
+            height={258}
+          />
           <h1>BS2TTS</h1>
           <p> Battlescribe to Tabletop Simulator</p>
         </div>
 
         <div>
           <DragDrop />
+        </div>
+
+        <div className={styles.howToText}>
+          <p>
+            This website is designed to be used with the in-game tool for
+            Tabletop Simulator provided <a rel="noreferrer" href="https://steamcommunity.com/sharedfiles/filedetails/?id=2909560633">here</a>.
+          </p>
+          <p>
+            This tool helps with importing Warhammer 40k rosters created in the
+            Battlescribe army builder tool into TTS. To use this tool first
+            create a roster with <a rel="noreferrer" href="https://battlescribe.net/?tab=news">Battlescribe</a> and save the roster file (the
+            file created should have the .rosz extension). Click the upload area
+            or drag a file to upload the .rosz roster. When the roster is
+            uploaded, you'll be provided a code - copy this to your clipboard.
+          </p>
+          <p>
+            In Tabletop Simulator, paste the code into the Battlescribe2TTS tool
+            and then click "Submit Code". A series of buttons will be created
+            corresponding to the various selections in your army. To tell the
+            tool which in-game model to use for a particular selection, first
+            click the button, then pick up the model you want to use. The button
+            should change colors to indicate the model has been saved. Once all
+            models have been selected, click the "Create Army" button. The
+            models for your army will be spawned into the game, organized by
+            unit, with their names and descriptions filled in from your
+            Battlescribe data.
+          </p>
+          <p>You're ready to play!</p>
         </div>
       </main>
       <Footer />

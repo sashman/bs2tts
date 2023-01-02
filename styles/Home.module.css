@@ -91,6 +91,19 @@
   border-radius: var(--border-radius);
 }
 
+.howToText {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 0.5rem;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+.howToText p a:hover {
+  text-decoration: underline;
+}
+
 .footer {
   /* container
   mx-auto */
