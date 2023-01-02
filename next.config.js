@@ -4,7 +4,7 @@
 const isProd = process.env.NODE_ENV === 'production'
 
 const nextConfig = {
-  assetPrefix: isProd ? '/bs2tts/' : '',
+  // assetPrefix: isProd ? '/bs2tts/' : '',
   reactStrictMode: true,
   images: {
     unoptimized: true,
