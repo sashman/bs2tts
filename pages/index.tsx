@@ -71,7 +71,7 @@ function Footer() {
             </a>
           </li>
           <li>
-            <a href="#">
+            <a target="_blank" href="https://www.buymeacoffee.com/sashman">
               <SiBuymeacoffee/> Support by donating
             </a>
           </li>
