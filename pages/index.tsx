@@ -13,7 +13,7 @@ import { useCopyToClipboard } from "usehooks-ts"
 const inter = Inter({ subsets: ["latin"] });
 const fileTypes = ["rosz"];
 const bs2ttsBackendUrl =
-  "https://bs2tts2pwqnfvyw-bs2tts2-backend.functions.fnc.fr-par.scw.cloud/roster";
+  "https://bs2tts2pwqnfvyw-bs2tts2-backend.functions.fnc.fr-par.scw.cloud/roster?addScripts=true";
 
 function DragDrop() {
   const [{ data, loading, error }, request] = useAxios(
