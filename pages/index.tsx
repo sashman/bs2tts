@@ -21,6 +21,7 @@ function DragDrop() {
       url: bs2ttsBackendUrl,
       method: "POST",
       headers: { "Content-Type": "multipart/form-data" },
+      params: { addScripts: true }
     },
     { manual: true }
   );
