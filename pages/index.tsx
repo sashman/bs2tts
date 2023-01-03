@@ -8,6 +8,7 @@ import useAxios from "axios-hooks";
 import { FaGithub, FaFileUpload } from "react-icons/fa";
 import { SiBuymeacoffee } from "react-icons/si";
 import Image from "next/image";
+import { useCopyToClipboard } from "usehooks-ts"
 
 const inter = Inter({ subsets: ["latin"] });
 const fileTypes = ["rosz"];
@@ -23,6 +24,8 @@ function DragDrop() {
     },
     { manual: true }
   );
+
+  const [ value, copy ] = useCopyToClipboard();
 
   const handleChange = async (files: File) => {
     console.log(files);
@@ -49,13 +52,13 @@ function DragDrop() {
           <span
             className={styles.rosterId}
             onClick={() => {
-              navigator.clipboard.writeText(data.id);
+              copy(data.id)
             }}
           >
             {data.id}
           </span>
         )}
-        <div className={styles.tooltip}>Click to copy</div>
+        <div className={styles.tooltip}>{ value ? 'Copied' : 'Click to copy' }</div>
       </div>
     </>
   );
