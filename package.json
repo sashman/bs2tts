@@ -8,7 +8,7 @@
     "export": "next export",
     "start": "next start",
     "lint": "next lint",
-    "add-domain": "echo \"www.bs2tts.com\" > build/CNAME"
+    "add-domain": "echo \"www.bs2tts.com\" > out/CNAME"
   },
   "dependencies": {
     "@next/font": "13.1.1",
